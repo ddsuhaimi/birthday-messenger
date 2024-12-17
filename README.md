@@ -1,3 +1,4 @@
+```
 src/
 ├── config.ts # Some config needed by the app
 │
@@ -35,3 +36,4 @@ src/
 │
 ├── app.ts # Express setup
 └── server.ts # Entry point
+```
