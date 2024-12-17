@@ -1,30 +1,37 @@
 src/
-├── config/ # Configuration files
-│ └── index.ts # Environment variables and app config
+├── config.ts # Some config needed by the app
+│
 ├── middleware/ # Express middleware
-│ ├── error-handler.ts # Global error handling
-│ └── validate.ts # Request validation using Zod
+│ ├── error-handler.ts
+│ └── validate.ts
+│
 ├── models/ # Database models
-│ ├── message.ts # Message schema and model
-│ └── user.ts # User schema and model
+│ ├── message.ts
+│ └── user.ts
+│
 ├── routes/ # API routes
-│ └── user-routes.ts # User-related endpoints
-├── schemas/ # Validation schemas
-│ └── user-schema.ts # User input validation
-├── services/ # Business logic
-│ ├── email-service.ts # Email sending service
-│ ├── message-service.ts # Message processing
-│ ├── scheduler-service.ts # Cron job scheduler
-│ └── user-service.ts # User operations
+│ └── user-routes.ts
+│
+├── schemas/ # Zod validation schemas
+│ └── user-schema.ts
+│
+├── services/
+│ ├── email-service.ts
+│ ├── message-service.ts
+│ ├── scheduler-service.ts
+│ └── user-service.ts
+│
 ├── tests/ # Test files
-│ ├── helpers/ # Test helpers
+│ ├── helpers/
 │ │ └── database.ts # Test database setup
 │ ├── services/ # Service tests
 │ │ ├── message-service.test.ts
 │ │ └── user-service.test.ts
 │ └── setup.ts # Test environment setup
+│
 ├── utils/ # Utility functions
 │ ├── async-handler.ts # Async error handling
-│ └── date-utils.ts # Date manipulation
-├── app.ts # Express app setup
-└── server.ts # Server entry point
+│ └── date-utils.ts
+│
+├── app.ts # Express setup
+└── server.ts # Entry point
